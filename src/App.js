@@ -23,7 +23,7 @@ export default function Main({ res }) {
   }, [location.state]);
 
   useEffect(() => {
-    const socketInstance = io("https://tasktodo-1.onrender.com");
+    const socketInstance = io("wss://tasktodo-1.onrender.com");
     // setSocket(socketInstance);
 
     socketInstance.on('connect', () => {
