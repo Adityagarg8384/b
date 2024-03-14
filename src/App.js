@@ -41,11 +41,13 @@ export default function Main({ res }) {
         setIsPlaying(false);
       }, 20000);
     }
-      cross=false;
+      
       console.log("Received some data from server" + data);
     })
   },)
 
+  cross=false;
+  
   const getdata = () => {
     try {
       fetch(`https://tasktodo-1.onrender.com/api/gettask/${userId}`,{
